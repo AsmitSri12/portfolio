@@ -50,11 +50,12 @@ export default function AboutSection() {
           >
             <div className="aspect-square max-w-sm mx-auto relative group">
               <div className="absolute inset-0 border-2 border-indigo-500 rounded-2xl translate-x-4 translate-y-4 transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2" />
-              <div className="absolute inset-0 bg-slate-800 rounded-2xl overflow-hidden shadow-2xl relative z-10 flex items-center justify-center border border-slate-700">
+              <div className="absolute inset-0 bg-slate-800 rounded-2xl overflow-hidden shadow-2xl z-10 flex items-center justify-center border border-slate-700">
                 <Image 
                   src="/profile.jpg" 
                   alt="Asmit Srivastava Profile Photo" 
                   fill 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
