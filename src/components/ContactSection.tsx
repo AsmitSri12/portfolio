@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Send, Linkedin, Sparkles } from "lucide-react";
+import { Mail, Send, Sparkles } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -84,7 +85,7 @@ export default function ContactSection() {
                   className="group flex items-center gap-4 p-4 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/50 hover:bg-slate-800/60 transition-all duration-300"
                 >
                   <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform">
-                    <Linkedin className="w-6 h-6" />
+                    <FaLinkedin className="w-6 h-6" />
                   </div>
                   <div>
                     <p className="text-sm text-slate-500 font-medium">LinkedIn</p>
