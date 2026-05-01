@@ -7,32 +7,25 @@ import Link from "next/link";
 
 const projectsData = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management, secure payments, and an intuitive admin dashboard. Built to scale and handle high traffic.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Prisma"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Backend Ledger (Banking System)",
+    description: "A robust backend system for banking operations. Handles secure transactions, user accounts, and ledger maintenance with a focus on reliability and data integrity.",
+    tech: ["Node.js", "Express", "REST API", "Database"],
+    github: "https://github.com/AsmitSri12/Backend-Ledger-main",
+    demo: "https://backend-ledger-main-cyvs.vercel.app",
   },
   {
-    title: "AI Content Generator",
-    description: "An AI-powered application that generates high-quality marketing copy. Features include user authentication, subscription tiers, and history tracking.",
-    tech: ["React", "Node.js", "OpenAI API", "MongoDB", "Express"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Campgrounds",
+    description: "A full-stack web application allowing users to discover, create, and review campgrounds. Features user authentication, interactive maps, and image uploads.",
+    tech: ["Node.js", "Express", "MongoDB", "Web Technologies"],
+    github: "https://github.com/AsmitSri12/campgrounds",
+    demo: "https://campgrounds-ihao.onrender.com/",
   },
   {
-    title: "Real-time Chat Application",
-    description: "A responsive chat application supporting private messaging, group chats, file sharing, and read receipts with minimal latency.",
-    tech: ["Vue.js", "Socket.io", "Firebase", "Tailwind CSS"],
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-  {
-    title: "Task Management SaaS",
-    description: "A comprehensive project management tool with Kanban boards, time tracking, and team collaboration features.",
-    tech: ["Next.js", "GraphQL", "PostgreSQL", "Chakra UI"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Diabetes Prediction App",
+    description: "A Federated Learning-based machine learning application to predict diabetes risk. Built with a scalable architecture separating the machine learning backend and user interface.",
+    tech: ["PyTorch", "Python", "Next.js", "Machine Learning"],
+    github: "https://github.com/AsmitSri12/diabetes-prediction-app",
+    demo: "https://fl-diabetes-api.onrender.com",
   }
 ];
 

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { User } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -50,10 +51,12 @@ export default function AboutSection() {
             <div className="aspect-square max-w-sm mx-auto relative group">
               <div className="absolute inset-0 border-2 border-indigo-500 rounded-2xl translate-x-4 translate-y-4 transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2" />
               <div className="absolute inset-0 bg-slate-800 rounded-2xl overflow-hidden shadow-2xl relative z-10 flex items-center justify-center border border-slate-700">
-                {/* Fallback avatar if no image provided */}
-                <div className="text-slate-600">
-                  <User className="w-32 h-32" />
-                </div>
+                <Image 
+                  src="/profile.jpg" 
+                  alt="Asmit Srivastava Profile Photo" 
+                  fill 
+                  className="object-cover"
+                />
               </div>
             </div>
           </motion.div>

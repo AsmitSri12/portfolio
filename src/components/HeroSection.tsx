@@ -68,7 +68,7 @@ export default function HeroSection() {
               <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1No63CwioJW1S6GFXECTbwj2vw_WvasPE/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-700 text-base font-medium rounded-xl text-slate-300 bg-slate-900 hover:bg-slate-800 transition-colors hover:text-white"
