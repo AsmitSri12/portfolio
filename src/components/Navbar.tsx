@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 
 const navLinks = [
@@ -59,6 +59,10 @@ export default function Navbar() {
                 <FaLinkedin className="w-5 h-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
+              <Link href="https://x.com/asmitsri1" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+                <FaTwitter className="w-5 h-5" />
+                <span className="sr-only">X</span>
+              </Link>
             </div>
           </nav>
 
@@ -100,6 +104,9 @@ export default function Navbar() {
                 </Link>
                 <Link href="https://www.linkedin.com/in/asmit-srivastava-4a5011269/" target="_blank" className="text-slate-400 hover:text-white">
                   <FaLinkedin className="w-6 h-6" />
+                </Link>
+                <Link href="https://x.com/asmitsri1" target="_blank" className="text-slate-400 hover:text-white">
+                  <FaTwitter className="w-6 h-6" />
                 </Link>
               </div>
             </div>

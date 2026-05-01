@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Mail, Send, Sparkles } from "lucide-react";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 
 const contactTypes = [
   { id: "hiring", label: "Hiring / Job", icon: "💼" },
@@ -14,6 +14,13 @@ const contactTypes = [
 
 export default function ContactSection() {
   const [selectedType, setSelectedType] = useState("hiring");
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    setError("Something went wrong. Email is the fastest way.");
+  };
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
@@ -51,7 +58,6 @@ export default function ContactSection() {
         </div>
 
         <div className="grid lg:grid-cols-5 gap-12 items-start">
-          {/* Contact Methods */}
           <div className="lg:col-span-2 space-y-8">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -110,19 +116,19 @@ export default function ContactSection() {
             </motion.div>
           </div>
 
-          {/* Contact Form Card */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-3 bg-slate-800/40 border border-slate-700/50 rounded-3xl p-8 shadow-2xl relative"
+            className="lg:col-span-3 bg-slate-800/40 border border-slate-700/50 rounded-3xl p-8 shadow-2xl"
           >
-            <div className="space-y-8">
+            <form onSubmit={handleSubmit} className="space-y-8">
               <div className="grid grid-cols-3 gap-3">
                 {contactTypes.map((type) => (
                   <button
                     key={type.id}
+                    type="button"
                     onClick={() => setSelectedType(type.id)}
                     className={`p-3 rounded-xl border text-sm font-medium transition-all duration-300 flex flex-col items-center gap-2 ${
                       selectedType === type.id
@@ -143,6 +149,8 @@ export default function ContactSection() {
                     <input
                       type="text"
                       placeholder="John Doe"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all"
                     />
                   </div>
@@ -151,6 +159,8 @@ export default function ContactSection() {
                     <input
                       type="email"
                       placeholder="john@example.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all"
                     />
                   </div>
@@ -160,15 +170,22 @@ export default function ContactSection() {
                   <textarea
                     rows={4}
                     placeholder="Tell me about your project..."
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all resize-none"
                   />
                 </div>
-                <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg shadow-indigo-500/20 active:scale-[0.98]">
+                {error && (
+                  <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-xl text-red-400 text-sm">
+                    {error}
+                  </div>
+                )}
+                <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg shadow-indigo-500/20 active:scale-[0.98]">
                   Send Message
                   <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </button>
               </div>
-            </div>
+            </form>
           </motion.div>
         </div>
       </div>
