@@ -19,7 +19,7 @@ export default function Footer() {
             <FaLinkedin className="w-6 h-6" />
             <span className="sr-only">LinkedIn</span>
           </Link>
-          <Link href="mailto:hello@example.com" className="text-slate-400 hover:text-indigo-400 transition-colors">
+          <Link href="mailto:asmitsri2182@gmail.com" className="text-slate-400 hover:text-indigo-400 transition-colors">
             <Mail className="w-6 h-6" />
             <span className="sr-only">Email</span>
           </Link>
