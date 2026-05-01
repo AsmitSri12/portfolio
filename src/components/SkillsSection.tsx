@@ -6,15 +6,15 @@ import { Code2 } from "lucide-react";
 const skillsData = [
   {
     category: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "HTML/CSS", "JavaScript"],
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS", "JavaScript"],
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express", "Python", "MongoDB", "PostgreSQL", "REST APIs"],
+    skills: ["Node.js", "Express", "Python", "MongoDB", "REST APIs"],
   },
   {
     category: "Tools & Technologies",
-    skills: ["Git", "GitHub", "Docker", "Vercel", "AWS", "Figma", "Postman"],
+    skills: ["Git", "GitHub", "Docker", "Vercel", "Postman"],
   },
 ];
 

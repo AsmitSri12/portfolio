@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, Send, Sparkles } from "lucide-react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -90,6 +90,20 @@ export default function ContactSection() {
                   <div>
                     <p className="text-sm text-slate-500 font-medium">LinkedIn</p>
                     <p className="text-slate-200 group-hover:text-indigo-400 transition-colors">Connect with me</p>
+                  </div>
+                </Link>
+
+                <Link
+                  href="https://x.com/asmitsri1"
+                  target="_blank"
+                  className="group flex items-center gap-4 p-4 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/50 hover:bg-slate-800/60 transition-all duration-300"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform">
+                    <FaTwitter className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-slate-500 font-medium">X (Twitter)</p>
+                    <p className="text-slate-200 group-hover:text-indigo-400 transition-colors">Follow me</p>
                   </div>
                 </Link>
               </div>

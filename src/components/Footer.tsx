@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
@@ -19,6 +19,10 @@ export default function Footer() {
             <FaLinkedin className="w-6 h-6" />
             <span className="sr-only">LinkedIn</span>
           </Link>
+          <Link href="https://x.com/asmitsri1" target="_blank" className="text-slate-400 hover:text-indigo-400 transition-colors">
+            <FaTwitter className="w-6 h-6" />
+            <span className="sr-only">X</span>
+          </Link>
           <Link href="mailto:asmitsri2182@gmail.com" className="text-slate-400 hover:text-indigo-400 transition-colors">
             <Mail className="w-6 h-6" />
             <span className="sr-only">Email</span>
@@ -27,7 +31,7 @@ export default function Footer() {
 
         <p className="text-slate-500 text-sm text-center">
           &copy; {currentYear} Asmit Srivastava. All rights reserved. <br className="sm:hidden" />
-          Built with Next.js, Tailwind CSS & Framer Motion.
+          Built with Next.js & Tailwind CSS.
         </p>
       </div>
     </footer>
