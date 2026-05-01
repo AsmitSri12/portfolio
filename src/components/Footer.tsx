@@ -11,11 +11,11 @@ export default function Footer() {
         <h2 className="text-xl font-bold text-slate-100 mb-6">Asmit Srivastava</h2>
         
         <div className="flex space-x-6 mb-8">
-          <Link href="https://github.com" target="_blank" className="text-slate-400 hover:text-indigo-400 transition-colors">
+          <Link href="https://github.com/AsmitSri12" target="_blank" className="text-slate-400 hover:text-indigo-400 transition-colors">
             <FaGithub className="w-6 h-6" />
             <span className="sr-only">GitHub</span>
           </Link>
-          <Link href="https://linkedin.com" target="_blank" className="text-slate-400 hover:text-indigo-400 transition-colors">
+          <Link href="https://www.linkedin.com/in/asmit-srivastava-4a5011269/" target="_blank" className="text-slate-400 hover:text-indigo-400 transition-colors">
             <FaLinkedin className="w-6 h-6" />
             <span className="sr-only">LinkedIn</span>
           </Link>

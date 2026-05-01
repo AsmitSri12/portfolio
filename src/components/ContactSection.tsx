@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Mail, Send, Linkedin, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -79,7 +79,7 @@ export default function ContactSection() {
                 </Link>
 
                 <Link
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/asmit-srivastava-4a5011269/"
                   target="_blank"
                   className="group flex items-center gap-4 p-4 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/50 hover:bg-slate-800/60 transition-all duration-300"
                 >

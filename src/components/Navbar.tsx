@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Mail } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
@@ -51,11 +51,11 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="flex items-center space-x-4 pl-4 border-l border-slate-700">
-              <Link href="https://github.com" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+              <Link href="https://github.com/AsmitSri12" target="_blank" className="text-slate-400 hover:text-white transition-colors">
                 <FaGithub className="w-5 h-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="https://linkedin.com" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+              <Link href="https://www.linkedin.com/in/asmit-srivastava-4a5011269/" target="_blank" className="text-slate-400 hover:text-white transition-colors">
                 <FaLinkedin className="w-5 h-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -95,10 +95,10 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="flex items-center space-x-4 px-3 pt-4 border-t border-slate-800 mt-4">
-                <Link href="https://github.com" target="_blank" className="text-slate-400 hover:text-white">
+                <Link href="https://github.com/AsmitSri12" target="_blank" className="text-slate-400 hover:text-white">
                   <FaGithub className="w-6 h-6" />
                 </Link>
-                <Link href="https://linkedin.com" target="_blank" className="text-slate-400 hover:text-white">
+                <Link href="https://www.linkedin.com/in/asmit-srivastava-4a5011269/" target="_blank" className="text-slate-400 hover:text-white">
                   <FaLinkedin className="w-6 h-6" />
                 </Link>
               </div>
